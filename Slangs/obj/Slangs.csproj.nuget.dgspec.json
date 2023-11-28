@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SAM DAD\\Desktop\\Slangs\\Slangs\\Slangs.csproj": {}
+    "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SAM DAD\\Desktop\\Slangs\\Slangs\\Slangs.csproj": {
+    "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SAM DAD\\Desktop\\Slangs\\Slangs\\Slangs.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj",
         "projectName": "Slangs",
-        "projectPath": "C:\\Users\\SAM DAD\\Desktop\\Slangs\\Slangs\\Slangs.csproj",
-        "packagesPath": "C:\\Users\\SAM DAD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SAM DAD\\Desktop\\Slangs\\Slangs\\obj\\",
+        "projectPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj",
+        "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SAM DAD\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
