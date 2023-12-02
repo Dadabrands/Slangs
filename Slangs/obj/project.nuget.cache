@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "diWd+YkL1OSClZgCJzz8WwMO8XonW8vlbDbLkLEjHMhPiBKY1tzj0x2paOwSRAQJD2kv/QIOtsTO7tPg0bUqwA==",
+  "dgSpecHash": "LUXXPswb89GqZjj+AcbWVeLBSY/iRAFgjXSx4R9xSKCf/niz4jVG+gftXgdzfcTrKeTlHbe7egZQdSNN7pW7BQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj",
+  "projectFilePath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Slangs_Web_Api\\Slangs_API\\Slangs\\Slangs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.14\\microsoft.aspnetcore.openapi.7.0.14.nupkg.sha512",
     "C:\\Users\\Joshua\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

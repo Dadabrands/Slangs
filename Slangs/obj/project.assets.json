@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj",
+      "projectUniqueName": "C:\\Users\\Joshua\\Desktop\\My_folders\\Slangs_Web_Api\\Slangs_API\\Slangs\\Slangs.csproj",
       "projectName": "Slangs",
-      "projectPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\Slangs.csproj",
+      "projectPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Slangs_Web_Api\\Slangs_API\\Slangs\\Slangs.csproj",
       "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Web Api\\Slangs_API\\Slangs\\obj\\",
+      "outputPath": "C:\\Users\\Joshua\\Desktop\\My_folders\\Slangs_Web_Api\\Slangs_API\\Slangs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config"
