@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using namespace Slangs_API.Entities
+using Slangs.Entities;
 
-namespace Slangs_API.Repositories
-{
+namespace Slangs.Repositories;
+
     public class InMemoryRepo
     {
         private readonly List<Slang> slangs = new()
@@ -16,8 +16,8 @@ namespace Slangs_API.Repositories
                 SlangName = "Omo",
                 Meaning = "An exclamation for a particular reason, be it good or bad",
                 Usage = "Omo see that fine babe \n Omo, God dey create ...",
-                Origin = "Yoruba"
-                UploadDate = DateTimeOffset.UtcNOW
+                Origin = "Yoruba",
+                UploadDate = DateTimeOffset.UtcNow
             },
             new Slang()
             {
@@ -25,8 +25,9 @@ namespace Slangs_API.Repositories
                 SlangName = "Muzz",
                 Meaning = "A feeling of excitement because of an action that a person takes or because of a particular situation",
                 Usage = "This guy dey muzz me gan \n Omo, everything just dey muzz me die",
-                Origin = "English"
-                UploadDate = DateTimeOffset.UtcNOW
+                Origin = "English",
+                UploadDate = DateTimeOffset.UtcNow
+
             },
             new Slang()
             {
@@ -35,7 +36,7 @@ namespace Slangs_API.Repositories
                 Meaning = "An action by an human being that warrants confidence or charistma",
                 Usage = "This guy has too much rizz \n Rizz me up",
                 Origin = "English",
-                UploadDate = DateTimeOffset.UtcNOW
+                UploadDate = DateTimeOffset.UtcNow
 
             },
             new Slang()
@@ -48,35 +49,33 @@ namespace Slangs_API.Repositories
                 UploadDate = DateTimeOffset.UtcNow
             }
         };
-        public IEnumerable<Slang> Slang()
+        public IEnumerable<Slang> GetSlangs()
         {
             return slangs;
         }
-        public int GetSlang(Guid id)
+        public IEnumerable<Slang> GetSlang(Guid id)
         {
-            return slangs.Where(slang => slang.Id == id).SingleOrDefault();
+            var slang = slangs.Where(slang => slang.Id == id);
+            return slang;
         } 
-        public bool UpdateSlang(Guid id, string slangName)
-        {
-            slangs.Find(slang =>
-            {
-                if(slang.id == id)
-                {
-                    if(slang.Contains(slangName))
-                    {
-                        slang.SlangName = slangName;
-                    }
-                }
-            })
-            return true;
-        }
-        public void RemoveSlang(Guid id)
-        {
-            if (slangs.Contain(slang => slang.id == Id))
-            {
-                slangs.Remove(slang => slang.id == Id);
-            }
-            return true;
-        }
-    }
-}
+    //     public bool UpdateSlang(Guid id, string slangName)
+    //     {
+    //         if(slangs.Find(slang => slang.Id == id ) is NotNull)
+    //         {
+    //             if(slangs.Contains(slangName))
+    //             {
+    //                 slang.SlangName = slangName;
+    //             }
+    //         }
+
+    //         return true;
+    //     }
+    //     public bool RemoveSlang(Guid id)
+    //     {
+    //         if (slangs.Contains(slang => slang.id == Id))
+    //         {
+    //             slangs.Remove(slang => slang.id == Id);
+    //         }
+    //         return true;
+    //     }
+    // }

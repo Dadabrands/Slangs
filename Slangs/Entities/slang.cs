@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Slangs_API.Entities;
+namespace Slangs.Entities;
 
 public class Slang
 {
