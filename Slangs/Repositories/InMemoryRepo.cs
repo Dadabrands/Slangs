@@ -6,7 +6,7 @@ using Slangs.Entities;
 
 namespace Slangs.Repositories;
 
-    public class InMemoryRepo
+    public class InmemoryRepo : IInmemoryRepo
     {
         private readonly List<Slang> slangs = new()
         {
@@ -53,20 +53,24 @@ namespace Slangs.Repositories;
         {
             return slangs;
         }
+
         public IEnumerable<Slang> GetSlang(Guid id)
         {
             var slang = slangs.Where(slang => slang.Id == id);
             return slang;
-        } 
-    //     public bool UpdateSlang(Guid id, string slangName)
-    //     {
-    //         if(slangs.Find(slang => slang.Id == id ) is NotNull)
-    //         {
-    //             if(slangs.Contains(slangName))
-    //             {
-    //                 slang.SlangName = slangName;
-    //             }
-    //         }
+        }
+// bool UpdateName(string update, string former, Guid id)
+// {
+//     var name = slangs.Where(slang => slang.SlangName == former);
+//     foreach (var item in name)
+//     {
+//         if(item.SlangName == former)
+//         {
+//             item.SlangName = update;
+//         }
+//     }
+//     return true;
+// }
 
     //         return true;
     //     }
