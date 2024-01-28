@@ -14,11 +14,3 @@ public class Slang
     public string? Origin { get; set; }
     public required DateTimeOffset UploadDate {get; set;}
 }
-
-public class User
-{
-    public Guid Id{get; init;}
-    public required string UserName { get; set; }
-    public string? Input { get; set; }
-    public string? FavSlang {get; set;}
-}

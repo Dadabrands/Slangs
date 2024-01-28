@@ -1,9 +1,14 @@
 using Slangs.Repositories;
+using Slangs.Data;
+using Slangs.Extensions;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("SlangDbConnectionString");
 // Add services to the container.
-
+builder.Services.AddDbContext<SlangDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+builder.Services.ConfigureCors();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
