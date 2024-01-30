@@ -9,6 +9,10 @@ namespace Slangs.Data
 {
     public class SlangDbContext : DbContext
     {
+        public SlangDbContext(DbContextOptions<SlangDbContext> options) : base(options)
+        {
+
+        }
         public DbSet<Slang> Slang{get; set;}
 
         public DbSet<User> User{get; set;}
